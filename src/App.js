@@ -10,7 +10,6 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -19,7 +18,7 @@ function App() {
             </ul>
           </nav>
         </header>
-        <main>
+        <main className="App-main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/resume" element={<Resume />} />
